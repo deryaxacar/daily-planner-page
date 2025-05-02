@@ -7,3 +7,7 @@
 ![Daily Planner](dailyplanner.png)
 
 ---
+
+<div align="center">
+  <b>2025 | Created by Derya ACAR</b>
+</div>
