@@ -1,0 +1,419 @@
+:root {
+    --primary-color: #AD6C6D;
+    --secondary-color: #556b5e;
+    --background-color: #f4e4e4;
+    --background-color-light: #ffffff;
+    --text-color: #333;
+    --font-family-montserrat: 'Montserrat', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-roboto);
+    background: url('../img/bg.png') no-repeat center top;
+    background-size: cover;
+    padding: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 63%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.fields .time {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fields label {
+    margin-top: 10px;
+}
+
+
+.fields .event {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* Appointment side-by-side */
+.appointment .fields {
+    display: flex;
+    gap: 14px;
+    height: 86%;
+}
+
+.appointment .fields .field-col {
+    background: var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment .fields .field-col label {
+    display: block;
+    font-family: var(--font-family-montserrat);
+    color: var(--secondary-color);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.appointment .fields .field-col input {
+    border: none;
+    padding: 6px;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--primary-color);
+    line-height: 1;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header .planner {
+    color: var(--secondary-color);
+}
+
+/* Date and days */
+.date {
+    grid-area: date;
+    background: var(--primary-color);
+    height: 38px;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 18px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-family: var(--font-family-montserrat);
+    margin-top: 25px;
+    margin-bottom: 8px;
+
+}
+
+.logo-div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.days button {
+    width: 55px;
+    height: 52px;
+    border: none;
+    border-radius: 6px;
+    background: var(--secondary-color);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--font-family-montserrat);
+}
+
+.days button.active {
+    background: var(--primary-color);
+}
+
+.section .field-col hr {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.column {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sections common */
+.section {
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 14px;
+    color: #ffffff;
+}
+
+.section h2 {
+    font-family: var(--font-family-montserrat);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+}
+
+.section textarea,
+.section input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin-bottom: 8px;
+    resize: none;
+    overflow: auto;
+}
+
+.drops {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.water-intake .drops {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.water-intake .drops span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Grid areas */
+.goals {
+    grid-area: goals;
+    height: 325px;
+}
+
+
+.weather {
+    grid-area: weather;
+    height: 122px;
+}
+
+.mood {
+    grid-area: mood;
+    height: 280px;
+}
+
+.meal {
+    grid-area: meal;
+}
+
+.water {
+    grid-area: water;
+    height: 200px;
+}
+
+.tasks {
+    grid-area: tasks;
+    height: 348px;
+}
+
+.exercise {
+    grid-area: exercise;
+    height: 250px;
+}
+
+.appointment {
+    grid-area: appointment;
+    height: 530px;
+    padding-bottom: 30px;
+}
+
+.money {
+    grid-area: money;
+    height: 200px;
+}
+
+.money-inner-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+}
+
+.money-inner-div div {
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    height: 70%;
+}
+
+.money-inner-div h4 {
+    display: block;
+    font-family: var(--font-family-montserrat);
+    color: var(--secondary-color);
+    margin-bottom: 6px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.money-inner-div input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 6px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.grateful {
+    grid-area: grateful;
+    height: 200px;
+}
+
+.reminder1 {
+    grid-area: reminder1;
+    height: 196px;
+}
+
+.reminder2 {
+    grid-area: reminder2;
+    height: 190px;
+}
+
+.section .goals-list input[type="text"] {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--background-color);
+}
+
+.section .goals input[type="text"]::placeholder {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.drops-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+h4 {
+    font-family: var(--font-family-montserrat);
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+.section h3 {
+    font-family: var(--font-family-montserrat);
+    font-weight: 550;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 3px 0 4px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.drop-weather {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.drop-weater-icon {
+    width: 55px;
+    height: 50px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.drops .water-intake {
+    width: 27px;
+    height: 39px;
+    margin-bottom: 15px;
+    gap: 0px;
+    object-fit: contain;
+}

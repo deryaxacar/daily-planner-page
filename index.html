@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Planner</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-div">
+                <span class="daily unselectable">Daily</span>
+                <span class="planner unselectable">Planner</span>
+            </div>
+            <div class="date-block">
+                <div class="date">Date</div>
+                <div class="days">
+                    <button>S</button><button class="active">M</button><button>T</button>
+                    <button class="active">W</button><button>T</button><button
+                        class="active">F</button><button>S</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="column">
+                <div class="section goals">
+                    <h2>Today's Goals</h2>
+                    <div class="goals-list">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                    </div>
+                </div>
+                <div class="section meal">
+                    <h3>Meal Tracker</h3>
+                    <br>
+                    <h4>Breakfast</h4>
+                    <input type="text">
+                    <h4>Lunch</h4>
+                    <input type="text">
+                    <h4>Dinner</h4>
+                    <input type="text">
+                    <h4>Snack</h4>
+                    <input type="text">
+                </div>
+                <div class="section water-intake water">
+                    <h2>Water Intake</h2>
+                    <br>
+                    <div class="drops">
+                        <div class="drops">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                            <img src="icon/drop.png" class="water-intake">
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Total:">
+                </div>
+                <div class="section money">
+                    <h2>Money Tracker</h2>
+                    <br>
+                    <div class="money-inner-div">
+                        <div>
+                            <h4>Money In</h4>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <h4>Money Out</h4>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section appointment">
+                    <h2>Today</h2>
+                    <h2>Appointment</h2>
+                    <br>
+                    <div class="fields">
+                        <div class="field-col time">
+                            <label for="time">Time</label>
+                            <hr>
+                            <textarea rows="22"></textarea>
+                        </div>
+                        <div class="field-col event">
+                            <label for="event">Event</label>
+                            <hr>
+                            <textarea rows="22"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="section tasks">
+                    <h2>Things to Get</h2>
+                    <h2>Done Today</h2>
+                    <div class="goals-list">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                    </div>
+                </div>
+                <div class="section grateful">
+                    <h2>Today I'm</h2>
+                    <h2>Grateful For</h2>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section weather">
+                    <h2>Weather</h2>
+                    <div class="drop-weather">
+                        <img src="icon/weather-1.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="icon/weather-2.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="icon/weather-3.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="icon/weather-3.png" class="drop-weater-icon" alt="Weather Icon">
+                    </div>
+                </div>
+                <div class="section mood">
+                    <h2>Mood</h2>
+                    <br>
+                    <div class="drops">
+                        <img src="icon/icon-1.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon/icon-2.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon/icon-3.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon/icon-4.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon/icon-5.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon/icon-6.png" class="drops-icon" alt="Mood Icon">
+                    </div>
+                    <textarea rows="9"></textarea>
+                </div>
+                <div class="section exercise">
+                    <h2>Exercise</h2>
+                    <br>
+                    <h4>Total Minutes</h4>
+                    <input type="text">
+                    <br><br>
+                    <h4>Total Steps</h4>
+                    <input type="text">
+                </div>
+                <div class="section reminder1">
+                    <h2>Reminder</h2>
+                    <br>
+                    <textarea rows="6"></textarea>
+                </div>
+
+                <div class="section reminder2">
+                    <h2>Reminder</h2>
+                    <br>
+                    <textarea rows="6"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.days button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.days button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
