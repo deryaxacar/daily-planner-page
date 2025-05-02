@@ -1,2 +1,3 @@
 
-<p> Daily Planner, HTML, CSS ve Vanilla JavaScript ile geliştirilmiş; günlük hedefler, öğün-su takibi, randevular, yapılacaklar listesi, hava durumu, ruh hali ve egzersiz takibini tek bir ekranda sunan bir web sayfasıdır, alıştırma amaçlı yapılmıştır. Projede ayrıca CSS ile üç sütunlu düzen oluşturma, Flexbox kullanarak sayfa konumlandırma ve arayüz bileşenlerinin düzenini pratik etmek için çeşitli positioning alıştırmaları da yer almaktadır. </p>
+
+<p> Daily Planner is a web page built with HTML, CSS, and vanilla JavaScript as a practice exercise; it presents daily goals, meal and water intake tracking, appointments, a to-do list, weather, mood, and exercise tracking on a single screen. The project also includes various positioning exercises to practice creating a three-column layout with CSS, using Flexbox for page positioning, and arranging UI components.</p>
