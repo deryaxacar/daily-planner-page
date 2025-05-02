@@ -4,6 +4,6 @@
 
 ---
 
-![Açıklayıcı Alt Metin](dailyplanner.png)
+![Daily Planner](dailyplanner.png)
 
 ---
